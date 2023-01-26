@@ -14,7 +14,7 @@
 		<p>Front End Dev + Web desinger</p>
 	</header>
 	<main>
-		<div class="about">
+		<section class="about">
 			<div class="header">
 				<p>who am i</p>
 				<h2>Hello</h2>
@@ -23,8 +23,8 @@
 			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, fuga beatae repellat laborum molestias mollitia aperiam neque! Adipisci animi quae, facilis possimus, repudiandae maiores repellat unde sed ducimus, enim hic.</p>
 			<article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat cum laborum ducimus repellendus iusto impedit, adipisci vel ullam, fuga facilis atque voluptas aut asperiores quasi rerum unde nam nulla!</article>
 			<button>check out my profile!</button>
-		</div><!-- about ends -->
-		<div class="skills">
+		</section><!-- about ends -->
+		<section class="skills">
             <i class="devicon-html5-plain"></i>
             <i class="devicon-css3-plain-wordmark"></i>
             <i class="devicon-sass-original"></i>			
@@ -33,8 +33,8 @@
             <i class="devicon-photoshop-plain"></i>
 			<i class="devicon-github-original"></i>
             <i class="devicon-firebase-plain"></i>
-        </div><!-- skill ends -->
-		<div class="my-work">
+        </section><!-- skill ends -->
+		<section class="my-work">
 			<div class="header">
 				<p>awesome projects</p>
 				<h2>My work</h2>
@@ -55,22 +55,28 @@
 				<button>live project</button>
 			<div class="project #4"></div>
 			</div>
-		</div><!-- my-work ends -->
-		<div class="contact">
+		</section><!-- my-work ends -->
+		<section class="contact">
 			<div class="header">
 				<p>awesome projects</p>
 				<h2>My work</h2>
 			</div>
-			<div class="form-section">
-				<form action="">
-					
-				</form>
-			</div>
+			<div class="form-section">    
+                <form action="#" method="#" class="relpyForm" name="relpyForm">
+                    <label for="displayName">your display name here</label>
+                    <input type="text" id="displayName" name="displayName" placeholder="Name">
+                    <label for="yourEmail">your email here</label>
+                    <input type="email" id="yourEmail" name="yourEmail" placeholder="Email address">
+                    <label for="yourComment">your comment here</label>
+                    <textarea name="yourComment" id="yourComment" cols="30" rows="10" minlength="5" maxlength="400">Comment</textarea>
+                    <button>post comment</button>    
+                    </form>
+				</div>
 
-		</div>
+		</section>
 	</main>
 	<footer>
-
+		<p>built by Hoi Fung Wong @ 2023</p>
 	</footer>
 </body>
 </html>
