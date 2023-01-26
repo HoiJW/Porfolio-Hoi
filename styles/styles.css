@@ -257,7 +257,7 @@ h1 {
   margin: 0;
   color: white;
   font-size: 5rem;
-  rotate: -90deg;
+  vertical-align: text-top;
   font-family: "Montserrat", sans-serif;
   width: 20%;
 }
