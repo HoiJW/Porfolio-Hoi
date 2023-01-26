@@ -1,8 +1,9 @@
 .about{
     background-color: $thirdColor;
-    clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 85%);
+    clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
+    flex-direction: column;
 }

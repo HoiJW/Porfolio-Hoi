@@ -1,8 +1,12 @@
 .skills{
     background-color: $firstColor;
-    clip-path: polygon(0 0, 100% 19%, 100% 76%, 0 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 30vh;
+    i{
+        font-size: 3rem;
+        margin: 2%;
+    }
 }

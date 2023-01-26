@@ -226,7 +226,7 @@ html {
   overflow: hidden;
 }
 
-body {
+.wrapper {
   margin: 0 auto;
   padding: 0;
 }
@@ -255,11 +255,11 @@ header {
 
 h1 {
   margin: 0;
-  text-align: center;
   color: white;
   font-size: 5rem;
   rotate: -90deg;
   font-family: "Montserrat", sans-serif;
+  width: 20%;
 }
 
 .dev-header {
@@ -271,8 +271,8 @@ h1 {
 
 .about {
   background-color: #f7f7f7;
-  -webkit-clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 85%);
-          clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 85%);
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
+          clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,13 +282,17 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 80vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .skills {
   background-color: #f8ca4d;
-  -webkit-clip-path: polygon(0 0, 100% 19%, 100% 76%, 0 100%);
-          clip-path: polygon(0 0, 100% 19%, 100% 76%, 0 100%);
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,6 +303,10 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   height: 30vh;
+}
+.skills i {
+  font-size: 3rem;
+  margin: 2%;
 }
 
 .my-work {
@@ -314,12 +322,16 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contact {
   background-color: #f8ca4d;
-  -webkit-clip-path: polygon(0 0, 100% 24%, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 24%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,6 +342,10 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer {
