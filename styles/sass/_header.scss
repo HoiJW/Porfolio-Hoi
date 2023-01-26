@@ -1,0 +1,23 @@
+@import "./variable";
+header{
+    height: 100vh;
+    background-color: #f8ca4d;
+    clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    rotate: -90deg;
+    font-family: $mainFont;
+}
+.dev-header{
+    rotate: -90deg;
+    font-family: $mainFont;
+    color: $fontFour;
+    font-size: 1.5rem;
+}

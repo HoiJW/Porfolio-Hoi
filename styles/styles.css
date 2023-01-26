@@ -225,3 +225,122 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+header {
+  height: 100vh;
+  background-color: #f8ca4d;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+  rotate: -90deg;
+  font-family: "Montserrat", sans-serif;
+}
+
+.dev-header {
+  rotate: -90deg;
+  font-family: "Montserrat", sans-serif;
+  color: #fe6192;
+  font-size: 1.5rem;
+}
+
+.about {
+  background-color: #f7f7f7;
+  -webkit-clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 85%);
+          clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 85%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.skills {
+  background-color: #f8ca4d;
+  -webkit-clip-path: polygon(0 0, 100% 19%, 100% 76%, 0 100%);
+          clip-path: polygon(0 0, 100% 19%, 100% 76%, 0 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30vh;
+}
+
+.my-work {
+  height: 100vh;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact {
+  background-color: #f8ca4d;
+  -webkit-clip-path: polygon(0 0, 100% 24%, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 24%, 100% 100%, 0 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+footer {
+  background-color: #f8ca4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
