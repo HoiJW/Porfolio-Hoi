@@ -1,10 +1,13 @@
 .skills{
     background-color: $firstColor;
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 75%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+    height: 15vh;
+    .skill-icon{
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     i{
         font-size: 3rem;
         margin: 2%;

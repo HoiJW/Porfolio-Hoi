@@ -442,8 +442,12 @@ h1 span {
 
 .skills {
   background-color: #f8ca4d;
-  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 75%);
-          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 75%);
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  height: 15vh;
+}
+.skills .skill-icon {
+  margin-top: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -453,7 +457,6 @@ h1 span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 30vh;
 }
 .skills i {
   font-size: 3rem;
