@@ -13,7 +13,23 @@
 	<title>Hoi The Dev!</title>
 </head>
 <body>
-	<header>
+	<nav class="top-nav">
+		<div>
+			<p>Nav</p>
+		  </div>
+		  <input id="menu-toggle" type="checkbox" />
+		  <label class='menu-button-container' for="menu-toggle">
+		  <div class='menu-button'></div>
+		</label>
+		  <ul class="menu">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#skills">Skill Set</a></li>
+			<li><a href="#my-work">My Work</a></li>
+			<li><a href="#contact">contact</a></li>
+		  </ul>
+	</nav>
+	<header id="home">
 		<div class="triangle shape animatedS">
 			<img src="./assets/triangle-w.png" alt="">
 		</div>
@@ -29,7 +45,7 @@
 		</div>
 	</header>
 	<main>
-		<section class="about theMoveH"> <!-- observerHeader -->
+		<section class="about theMoveH" id="about"> <!-- observerHeader -->
 			<div class="about-wrapper">
 			<div class="triangle shape animatedS">
 				<img src="./assets/triangle.png" alt="">
@@ -56,7 +72,7 @@
 				</div>
 			</div><!-- wrapper ends -->	
 		</section><!-- about ends -->
-		<section class="skills theMoveS">
+		<section class="skills theMoveS" id="skills">
             <div class="animated skill-icon">
 			<i class="devicon-html5-plain"></i>
             <i class="devicon-css3-plain-wordmark"></i>
@@ -68,7 +84,7 @@
             <i class="devicon-firebase-plain"></i>
 		</div>
         </section><!-- skill ends -->
-		<section class="my-work">
+		<section class="my-work" id="my-work">
 			<div class="section-header animated">
 				<p><span class="divider">|</span>awesome projects</p>
 				<h2 >My work</h2>
@@ -137,7 +153,7 @@
 				</div>
 			</div>	
 		</section><!-- my-work ends -->
-		<section class="contact theMoveC">
+		<section class="contact theMoveC" id="contact">
 			<div class="triangle shape animatedS">
 				<img src="./assets/triangle-b.png" alt="">
 			</div>
