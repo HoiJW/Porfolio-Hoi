@@ -4,6 +4,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 70vh;
     flex-direction: column;
+}
+.about-wrapper{
+    position: relative;
+}
+.shape{
+    width: 10%;
+    position: absolute;
+}
+.section-header{
+    p,
+    h2{
+        text-align: center;
+    }
+    
 }
