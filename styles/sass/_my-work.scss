@@ -1,9 +1,28 @@
 .my-work{
-    height: 100vh;
+    padding-top: 20%;
+    height: 150vh;
    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background: $secColor;
+    button{
+        margin-top: 10%;
+        color: $fontFour;
+        text-transform: uppercase;
+        font-family: $mainFont;
+        font-weight: 600;
+        border: none;
+        background-color: $thirdColor;
+        
+        cursor: pointer;
+        transition: 0.5s;
+         &:focus,
+         &:hover{
+            scale: 1.1;
+            text-decoration: underline;
+            color: $firstColor;
+         }
+    }
 }

@@ -300,7 +300,7 @@ h1 span {
   background-color: #f7f7f7;
   -webkit-clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
           clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
-  height: 90vh;
+  height: 80vh;
 }
 .about .text-container {
   text-align: center;
@@ -312,6 +312,13 @@ h1 span {
   color: rgb(158, 158, 158);
   line-height: 30px;
   font-weight: 600;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.116);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.about .text-container p:focus, .about .text-container p:hover {
+  scale: 101%;
+  color: #f8ca4d;
 }
 .about .text-container article {
   padding-top: 10%;
@@ -327,9 +334,13 @@ h1 span {
   border: none;
   background-color: #f7f7f7;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-.about .text-container buttonfocus, .about .text-container buttonhover {
-  border-bottom: 2px solid #fe6192;
+.about .text-container button:focus, .about .text-container button:hover {
+  scale: 1.1;
+  text-decoration: underline;
+  color: #f8ca4d;
 }
 .about .image-container {
   -ms-flex-preferred-size: 18%;
@@ -432,10 +443,17 @@ h1 span {
 .skills i {
   font-size: 3rem;
   margin: 2%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.skills i:hover {
+  color: white;
+  scale: 1.1;
 }
 
 .my-work {
-  height: 100vh;
+  padding-top: 20%;
+  height: 150vh;
   -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
           clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
   display: -webkit-box;
@@ -452,6 +470,23 @@ h1 span {
       -ms-flex-direction: column;
           flex-direction: column;
   background: white;
+}
+.my-work button {
+  margin-top: 10%;
+  color: #fe6192;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  border: none;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.my-work button:focus, .my-work button:hover {
+  scale: 1.1;
+  text-decoration: underline;
+  color: #f8ca4d;
 }
 
 .contact {
