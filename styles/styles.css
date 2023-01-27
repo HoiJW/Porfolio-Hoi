@@ -234,7 +234,7 @@ img {
 
 body {
   background-color: #f7f7f7;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 body h1,
 body h2,
@@ -300,6 +300,46 @@ h1 span {
   background-color: #f7f7f7;
   -webkit-clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
           clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
+  height: 90vh;
+}
+.about .text-container {
+  text-align: center;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin: -1%;
+}
+.about .text-container p {
+  color: rgb(158, 158, 158);
+  line-height: 30px;
+  font-weight: 600;
+}
+.about .text-container article {
+  padding-top: 10%;
+  color: rgb(158, 158, 158);
+  line-height: 25px;
+}
+.about .text-container button {
+  margin-top: 10%;
+  color: #fe6192;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  border: none;
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+.about .text-container buttonfocus, .about .text-container buttonhover {
+  border-bottom: 2px solid #fe6192;
+}
+.about .image-container {
+  -ms-flex-preferred-size: 18%;
+      flex-basis: 18%;
+  background-color: rgb(233, 232, 232);
+}
+
+.about-wrapper {
+  padding-top: 3%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,25 +349,69 @@ h1 span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.about-wrapper {
-  position: relative;
+.shape {
+  position: absolute;
 }
 
-.shape {
+.triangle {
+  left: 10%;
   width: 10%;
-  position: absolute;
+}
+
+.circle {
+  left: 10%;
+  width: 6%;
+  top: 25%;
+}
+
+.thin-circle {
+  width: 2%;
+  right: 5%;
+  bottom: 10%;
 }
 
 .section-header p,
 .section-header h2 {
   text-align: center;
+}
+.section-header .divider {
+  color: brown;
+  font-size: 2.5rem;
+}
+.section-header p {
+  padding-left: 5%;
+  margin: 0;
+}
+.section-header h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section-content {
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  position: relative;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-content p,
+.section-content article {
+  text-align: left;
 }
 
 .skills {
