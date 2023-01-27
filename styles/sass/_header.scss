@@ -5,6 +5,23 @@ header{
     clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
     display: flex;
     justify-content: center;
+    position: relative;
+    .triangle{
+        width: 12%;
+        right: 10%;
+        bottom: 35%;
+
+    }
+    .circle{
+        width: 8%;
+        left: 10%;
+        top: 1%;
+    }
+    .thin-circle{
+        width: 5%;
+        left: 26%;
+        bottom: 5%
+    }
 }
 .wrapper{
     margin: 0 auto;

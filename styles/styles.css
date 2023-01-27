@@ -255,6 +255,10 @@ body h3 {
   font-size: 2rem;
 }
 
+.shape {
+  position: absolute;
+}
+
 header {
   height: 80vh;
   background-color: #f8ca4d;
@@ -266,6 +270,22 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+header .triangle {
+  width: 12%;
+  right: 10%;
+  bottom: 35%;
+}
+header .circle {
+  width: 8%;
+  left: 10%;
+  top: 1%;
+}
+header .thin-circle {
+  width: 5%;
+  left: 26%;
+  bottom: 5%;
 }
 
 .wrapper {
@@ -298,9 +318,23 @@ h1 span {
 
 .about {
   background-color: #f7f7f7;
-  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
-          clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
-  height: 100vh;
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+          clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  height: auto;
+}
+.about .triangle {
+  left: 10%;
+  width: 10%;
+}
+.about .circle {
+  left: 10%;
+  width: 6%;
+  top: 25%;
+}
+.about .thin-circle {
+  width: 2%;
+  right: 5%;
+  bottom: 10%;
 }
 .about .text-container {
   text-align: center;
@@ -350,7 +384,7 @@ h1 span {
 }
 
 .about-wrapper {
-  padding-top: 3%;
+  padding-top: 5%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,27 +399,7 @@ h1 span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.shape {
-  position: absolute;
-}
-
-.triangle {
-  left: 10%;
-  width: 10%;
-}
-
-.circle {
-  left: 10%;
-  width: 6%;
-  top: 25%;
-}
-
-.thin-circle {
-  width: 2%;
-  right: 5%;
-  bottom: 10%;
+  padding-bottom: 3%;
 }
 
 .section-header p,
@@ -428,8 +442,8 @@ h1 span {
 
 .skills {
   background-color: #f8ca4d;
-  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 75%);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 75%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -453,10 +467,11 @@ h1 span {
 }
 
 .my-work {
-  padding-top: 0;
-  height: 150vh;
-  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-          clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: auto;
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+          clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,6 +516,13 @@ h1 span {
 }
 .my-work button:focus, .my-work button:hover {
   scale: 1.1;
+  color: #f8ca4d;
+}
+.my-work a {
+  text-decoration: none;
+  color: #fe6192;
+}
+.my-work a:focus, .my-work a:hover {
   text-decoration: underline;
   color: #f8ca4d;
 }
@@ -511,7 +533,7 @@ h1 span {
   height: auto;
 }
 .project-wrapper .project {
-  margin-top: 5%;
+  margin-top: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,8 +578,8 @@ h1 span {
 
 .contact {
   background-color: #f8ca4d;
-  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,10 +594,26 @@ h1 span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: white;
+  position: relative;
+}
+.contact .triangle {
+  width: 10%;
+  left: 5%;
+}
+.contact .circle {
+  width: 5%;
+  right: 7%;
+  bottom: 15%;
+}
+.contact .thin-circle {
+  width: 3%;
+  top: 10%;
+  right: 30%;
 }
 .contact .form-section {
   margin-top: 2%;
-  width: 500px;
+  width: 600px;
 }
 .contact form {
   display: -webkit-box;
@@ -585,9 +623,57 @@ h1 span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5% 10% 0% 10%;
+}
+.contact form label {
+  color: white;
+}
+.contact form input {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 2%;
+  margin: 0% 10% 5% 0%;
+  outline: none;
+}
+.contact form input::-webkit-input-placeholder {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.contact form input::-moz-placeholder {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.contact form input:-ms-input-placeholder {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.contact form input::-ms-input-placeholder {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.contact form input::placeholder {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.contact form textarea {
+  width: 100%;
+  background: none;
+  border: 1px solid white;
+  resize: none;
 }
 .contact button {
   margin-top: 10%;
+  margin-right: 12%;
   color: #fe6192;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
@@ -601,9 +687,32 @@ h1 span {
   padding: 1%;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  width: 150px;
 }
 .contact button:focus, .contact button:hover {
   scale: 1.1;
+}
+.contact .my-info {
+  text-align: center;
+}
+.contact .my-info .email {
+  color: #fe6192;
+}
+.contact .my-info p {
+  margin-top: 20%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+.contact .my-info .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  margin-left: 10%;
+  color: white;
 }
 
 footer {
@@ -617,4 +726,9 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+footer p {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
 }

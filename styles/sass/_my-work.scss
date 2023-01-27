@@ -1,7 +1,8 @@
 .my-work{
-    padding-top: 0;
-    height: 150vh;
-   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: auto;
+   clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,12 +31,19 @@
         font-weight: 600;
         border: none;
         background-color: $secColor;
-        
         cursor: pointer;
         transition: 0.5s;
          &:focus,
          &:hover{
             scale: 1.1;
+            color: $firstColor;
+         }
+    }
+    a{
+        text-decoration: none;
+        color: $fontFour;
+        &:focus,
+         &:hover{
             text-decoration: underline;
             color: $firstColor;
          }
@@ -46,7 +54,7 @@
     width: 55%;
     height: auto;
     .project{
-        margin-top: 5%;
+        margin-top: 10%;
         display: flex;
         flex-wrap: wrap;
     }

@@ -1,22 +1,68 @@
 .contact{
-    background-color: #f8ca4d;
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    background-color: $firstColor;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    color: $fontOne;
+    position: relative;
+    .triangle{
+        width: 10%;
+        left: 5%;
+    }
+    .circle{
+        width: 5%;
+        right: 7%;
+        bottom: 15%
+    }
+    .thin-circle{
+        width: 3%;
+        top: 10%;
+        right: 30%;
+
+    }
     .form-section{
         margin-top: 2%;
-        width: 500px;
+        width: 600px;
     }
     form{
         display: flex;
         flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5% 10% 0% 10%;
+        label{
+            color: $fontOne;
+        }
+        input{
+            width: 100%;
+            background: none;
+            border: none;
+            border-bottom: 1px solid $fontOne;
+            padding: 2%;
+            margin: 0% 10% 5% 0%;
+            outline: none;
+            &::placeholder{
+                color: $fontOne;
+                font-family:$mainFont ;
+                font-weight: 600;
+            } 
+        }
+        textarea{
+            width: 100%;
+            background: none;
+            border: 1px solid $fontOne;
+            // outline: none;
+            resize: none;
+        
+        }
         
     }
     button{
         margin-top: 10%;
+        margin-right: 12%;
         color: $fontFour;
         text-transform: uppercase;
         font-family: $mainFont;
@@ -28,10 +74,31 @@
         border: 1px solid $fontFour;
         padding: 1%;
         transition: 0.2s;
+        width: 150px;
             &:focus,
              &:hover{
                 scale: 1.1;
                 
              }
+    }
+
+    .my-info{
+        text-align: center;
+        .email{
+            color: $fontFour;
+        }
+        p{
+            margin-top: 20%;
+            font-family: $mainFont;
+            font-weight: 600;
+            color: $fontOne;
+        }
+        .icons{
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin-left: 10%;
+            color: $fontOne;
+        }
     }
 }
