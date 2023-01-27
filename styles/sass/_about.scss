@@ -5,7 +5,7 @@
     .text-container{
         text-align: center;
         flex-basis: 30%;
-        margin: -1%;
+        margin-left: 2%;
         p{
            color: $fontThree;
            line-height: 30px;
@@ -47,6 +47,7 @@
     .image-container{
         flex-basis: 18%;
         background-color: $fourColor;
+        margin-left: 5%;
         
     }
 
@@ -88,7 +89,7 @@
         font-size: 2.5rem;
     }
     p{
-        padding-left: 5%;
+        padding-left: 45%;
         margin: 0;
     }
     h2{

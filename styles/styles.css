@@ -306,7 +306,7 @@ h1 span {
   text-align: center;
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
-  margin: -1%;
+  margin-left: 2%;
 }
 .about .text-container p {
   color: rgb(158, 158, 158);
@@ -346,6 +346,7 @@ h1 span {
   -ms-flex-preferred-size: 18%;
       flex-basis: 18%;
   background-color: rgb(233, 232, 232);
+  margin-left: 5%;
 }
 
 .about-wrapper {
@@ -396,7 +397,7 @@ h1 span {
   font-size: 2.5rem;
 }
 .section-header p {
-  padding-left: 5%;
+  padding-left: 45%;
   margin: 0;
 }
 .section-header h2 {
@@ -452,10 +453,10 @@ h1 span {
 }
 
 .my-work {
-  padding-top: 20%;
+  padding-top: 0;
   height: 150vh;
-  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-          clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+          clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,6 +471,21 @@ h1 span {
       -ms-flex-direction: column;
           flex-direction: column;
   background: white;
+  position: relative;
+}
+.my-work .triangle {
+  width: 10%;
+  left: 88%;
+}
+.my-work .circle {
+  right: 10%;
+  width: 6%;
+  top: 45%;
+}
+.my-work .thin-circle {
+  width: 2%;
+  left: 5%;
+  bottom: 10%;
 }
 .my-work button {
   margin-top: 10%;
@@ -478,7 +494,7 @@ h1 span {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   border: none;
-  background-color: #f7f7f7;
+  background-color: white;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -487,6 +503,55 @@ h1 span {
   scale: 1.1;
   text-decoration: underline;
   color: #f8ca4d;
+}
+
+.project-wrapper {
+  margin: 0 auto;
+  width: 55%;
+  height: auto;
+}
+.project-wrapper .project {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.project-wrapper .thumnail {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  position: relative;
+}
+.project-wrapper .gif-container {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  top: 0;
+  width: 100%;
+}
+.project-wrapper .gif-container:focus, .project-wrapper .gif-container:hover {
+  opacity: 1;
+  display: block;
+}
+.project-wrapper .text-container {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  text-align: center;
+  padding-bottom: 2%;
+}
+.project-wrapper .t1 {
+  margin-left: 2%;
+}
+.project-wrapper .t2 {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  margin-right: 2%;
+}
+.project-wrapper h3 {
+  margin: 0;
 }
 
 .contact {
