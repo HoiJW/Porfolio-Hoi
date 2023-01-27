@@ -1,8 +1,9 @@
 .my-work{
     height: 100vh;
-    clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
+   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: $secColor;
 }
