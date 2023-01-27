@@ -573,6 +573,38 @@ h1 span {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.contact .form-section {
+  margin-top: 2%;
+  width: 500px;
+}
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact button {
+  margin-top: 10%;
+  color: #fe6192;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  border: none;
+  background-color: #f8ca4d;
+  width: 20%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: 1px solid #fe6192;
+  padding: 1%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.contact button:focus, .contact button:hover {
+  scale: 1.1;
+}
 
 footer {
   background-color: #f8ca4d;
