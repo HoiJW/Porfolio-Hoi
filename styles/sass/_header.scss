@@ -24,7 +24,7 @@ header{
     }
 }
 .wrapper{
-    margin: 0 auto;
+    margin-right: 5%;
     padding: 0;
     rotate: -90deg;
     height: 20%;
@@ -48,4 +48,111 @@ h1{
     color: $fontFour;
     font-size: 1.5rem;
     margin: 2%;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    header{
+
+        .triangle{
+            width: 24%;
+            right: 10%;
+            bottom: 35%;
+    
+        }
+        .circle{
+            width: 16%;
+            left: 10%;
+            top: 1%;
+        }
+        .thin-circle{
+            width: 10%;
+            left: 26%;
+            bottom: 5%
+        }
+    }
+    h1{
+        width: 80%;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    header{
+        height: 65vh;
+        .triangle{
+            width: 28%;
+            right: 10%;
+            bottom: 35%;
+    
+        }
+        .circle{
+            width: 20%;
+            left: 10%;
+            top: 1%;
+        }
+        .thin-circle{
+            width: 15%;
+            left: 26%;
+            bottom: 5%
+        }
+        h1{
+            font-size: 3.5rem;
+            margin-left: -20%;
+            span{
+                font-size: 6rem;
+                line-height: 3.5rem;
+            }
+        }
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    nav{
+        ul{
+            p{
+                display: none;
+            }
+        }
+        .menu-button-container{
+            margin-left: 0;
+        }
+    }
+    header{
+        height: 50vh;
+        .wrapper{ 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            height: 80%;
+        }
+        h1{
+            margin-top: 20%;
+            margin-left: -5%;
+            text-align: center;
+        }
+        .dev-header{
+            margin-top: -15%;
+            font-size: 1.2rem;
+        }
+        .triangle{
+            width: 28%;
+            right: 1%;
+            bottom: 35%;
+    
+        }
+        .circle{
+            width: 20%;
+            left: 10%;
+            top: 5%;
+        }
+        .thin-circle{
+            width: 15%;
+            left: 20%;
+            bottom: 15%
+        }
+    }
+    
 }
