@@ -284,6 +284,9 @@ body h3 {
   padding: 1em;
   right: 2%;
 }
+.top-nav div {
+  margin-right: 8px;
+}
 
 .menu {
   display: -webkit-box;
