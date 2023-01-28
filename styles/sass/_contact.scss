@@ -102,3 +102,28 @@
         }
     }
 }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .contact{
+        .triangle{
+            width: 15%;
+            left: 5%;
+        }
+        .circle{
+            width: 15%;
+            right: 7%;
+            bottom: 15%
+        }
+        .thin-circle{
+            width: 8%;
+            top: 10%;
+            right: 5%;
+    
+        }
+        .form-section{
+            width: 400px;
+        }
+
+    }
+}

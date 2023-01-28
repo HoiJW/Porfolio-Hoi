@@ -449,7 +449,7 @@ header {
   position: relative;
 }
 header .triangle {
-  width: 12%;
+  width: 15%;
   right: 10%;
   bottom: 35%;
 }
@@ -560,7 +560,7 @@ h1 span {
   }
   header .thin-circle {
     width: 15%;
-    left: 26%;
+    left: 20%;
     bottom: 5%;
   }
   header .wrapper {
@@ -1147,6 +1147,26 @@ h1 span {
   color: white;
 }
 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .contact .triangle {
+    width: 15%;
+    left: 5%;
+  }
+  .contact .circle {
+    width: 15%;
+    right: 7%;
+    bottom: 15%;
+  }
+  .contact .thin-circle {
+    width: 8%;
+    top: 10%;
+    right: 5%;
+  }
+  .contact .form-section {
+    width: 400px;
+  }
+}
 footer {
   background-color: #f8ca4d;
   display: -webkit-box;
