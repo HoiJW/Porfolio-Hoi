@@ -743,6 +743,7 @@ h1 span {
   .about .image-container {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    margin-bottom: 10%;
   }
   .about .text-container {
     -ms-flex-preferred-size: 50%;
@@ -764,6 +765,7 @@ h1 span {
     margin-left: 2%;
   }
   .about .text-container p {
+    font-size: 1rem;
     line-height: 25px;
     text-align: end;
   }

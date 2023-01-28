@@ -132,6 +132,7 @@
     .about{
         .image-container{
             flex-basis: 50%;
+            margin-bottom: 10%;
         }
         .text-container{
             flex-basis: 50%;
@@ -153,6 +154,7 @@
             flex-basis: 55%;
             margin-left: 2%;
             p{
+                font-size: 1rem;
                 line-height: 25px;
                 text-align: end;
             }
