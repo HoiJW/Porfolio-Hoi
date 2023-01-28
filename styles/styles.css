@@ -617,7 +617,7 @@ h1 span {
   transition: 0.2s;
 }
 .about .text-container p:focus, .about .text-container p:hover {
-  scale: 101%;
+  scale: 105%;
   color: #f8ca4d;
 }
 .about .text-container article {
@@ -867,6 +867,7 @@ h1 span {
   right: 10%;
   width: 6%;
   top: 45%;
+  z-index: -1;
 }
 .my-work .thin-circle {
   width: 2%;
@@ -950,6 +951,7 @@ h1 span {
 }
 .project-wrapper h3 {
   margin: 0;
+  text-transform: uppercase;
 }
 
 /* Portrait tablet and small desktops */
