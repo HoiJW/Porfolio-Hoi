@@ -110,10 +110,8 @@ h1{
 /* Landscape phones and down */
 @media (max-width: 480px) {
     nav{
-        ul{
-            p{
-                display: none;
-            }
+       .menu{
+         display: none;
         }
         .menu-button-container{
             margin-left: 0;

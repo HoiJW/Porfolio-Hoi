@@ -536,7 +536,7 @@ h1 span {
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  nav ul p {
+  nav .menu {
     display: none;
   }
   nav .menu-button-container {
