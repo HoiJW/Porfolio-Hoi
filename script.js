@@ -115,6 +115,7 @@ const observerContact = new IntersectionObserver(entries =>{
         }
     })
 });
+//shapes animation
 observerContact.observe(document.querySelector(".theMoveC"));
 const observerCShapes = new IntersectionObserver(entries =>{
     entries.forEach(entry =>{
@@ -123,10 +124,11 @@ const observerCShapes = new IntersectionObserver(entries =>{
             document.querySelectorAll(".animatedS")[10].classList.add("fadeInLeft");
             document.querySelectorAll(".animatedS")[11].classList.add("fadeInRight");
         }else{
-            document.querySelectorAll(".animatedS")[9].classList.else("fadeInTop");
-            document.querySelectorAll(".animatedS")[10].classList.else("fadeInLeft");
-            document.querySelectorAll(".animatedS")[11].classList.else("fadeInRight");
+            document.querySelectorAll(".animatedS")[9].classList.remove("fadeInTop");
+            document.querySelectorAll(".animatedS")[10].classList.remove("fadeInLeft");
+            document.querySelectorAll(".animatedS")[11].classList.remove("fadeInRight");
         }
+    
     })
 });
 observerCShapes.observe(document.querySelector(".theMoveC"));
