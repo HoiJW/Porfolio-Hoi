@@ -902,7 +902,7 @@ h1 span {
 
 .project-wrapper {
   margin: 0 auto;
-  width: 55%;
+  width: 62%;
   height: auto;
 }
 .project-wrapper .project {
@@ -917,6 +917,11 @@ h1 span {
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
   position: relative;
+}
+.project-wrapper .image-container {
+  box-shadow: 10px 10px 7px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 7px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 7px -8px rgba(0, 0, 0, 0.75);
 }
 .project-wrapper .gif-container {
   position: absolute;
@@ -949,6 +954,46 @@ h1 span {
   margin: 0;
 }
 
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .project-wrapper {
+    width: 80%;
+  }
+}
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .my-work .section-header {
+    padding-top: 5%;
+  }
+  .project-wrapper {
+    width: 100%;
+  }
+  .project-wrapper .t2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .project-wrapper .thumnail,
+.project-wrapper .text-container {
+    margin-left: 12%;
+  }
+  .project-wrapper .thumnail {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+  .project-wrapper .text-container {
+    margin-top: 5%;
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+  .project-wrapper .text-container p {
+    display: none;
+  }
+  .project-wrapper .text-container button {
+    margin-top: 2%;
+  }
+}
 .contact {
   background-color: #f8ca4d;
   -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);

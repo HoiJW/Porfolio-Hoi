@@ -51,7 +51,7 @@
 }
 .project-wrapper{
     margin: 0 auto;
-    width: 55%;
+    width: 62%;
     height: auto;
     .project{
         margin-top: 10%;
@@ -62,9 +62,11 @@
         flex-basis: 55%;
         position: relative;
     }
-    // .image-container{
-        
-    // }
+    .image-container{
+        box-shadow: 10px 10px 7px -8px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 7px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 7px -8px rgba(0,0,0,0.75);
+    }
     .gif-container{
         position: absolute;
         opacity: 0;
@@ -91,5 +93,48 @@
     }
     h3{
         margin: 0;
+    }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    .project-wrapper{
+        width: 80%;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .my-work{
+        .section-header{
+            padding-top: 5%;
+        }
+    }
+    .project-wrapper{
+        width: 100%;
+        .t2{
+            order: 1;
+        }
+        .thumnail,
+        .text-container{
+            margin-left: 12%;
+        }
+        .thumnail{
+            flex-basis: 80%;
+        }
+        .text-container{
+            margin-top: 5%;
+            flex-basis: 80%;;
+            p{
+                display: none;
+            }
+            button{
+                margin-top: 2%;
+            }
+        }
     }
 }
