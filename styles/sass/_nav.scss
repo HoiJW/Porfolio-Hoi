@@ -120,3 +120,11 @@
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+
+  /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .top-nav{
+    right: auto;
+    margin-left: 2%;
+  }
+}

@@ -6,22 +6,23 @@ header{
     display: flex;
     justify-content: center;
     position: relative;
-    .triangle{
-        width: 12%;
-        right: 10%;
-        bottom: 35%;
+    
+}
+.triangle{
+    width: 12%;
+    right: 10%;
+    bottom: 35%;
 
-    }
-    .circle{
-        width: 8%;
-        left: 10%;
-        top: 1%;
-    }
-    .thin-circle{
-        width: 5%;
-        left: 26%;
-        bottom: 5%
-    }
+}
+.circle{
+    width: 8%;
+    left: 10%;
+    top: 1%;
+}
+.thin-circle{
+    width: 5%;
+    left: 26%;
+    bottom: 5%
 }
 .wrapper{
     margin-right: 5%;
@@ -36,10 +37,10 @@ h1{
     vertical-align:text-top;
     font-family: $mainFont;
     width: 50%;
-    line-height: 5.5rem;
+    line-height: 6rem;
     //rotate: -90deg;
     span{
-        font-size: 8rem;
+        font-size: 8.5rem;
     }
 }
 .dev-header{
@@ -53,10 +54,9 @@ h1{
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
     header{
-
         .triangle{
             width: 24%;
-            right: 10%;
+            right: 5%;
             bottom: 35%;
     
         }
@@ -82,27 +82,32 @@ h1{
         height: 65vh;
         .triangle{
             width: 28%;
-            right: 10%;
+            right: 2%;
             bottom: 35%;
     
         }
         .circle{
             width: 20%;
             left: 10%;
-            top: 1%;
+            top: 20%;
         }
         .thin-circle{
             width: 15%;
             left: 26%;
             bottom: 5%
         }
+        .wrapper{
+            margin-right: 13%;
+        }
         h1{
-            font-size: 3.5rem;
-            margin-left: -20%;
+            font-size: 4rem;
             span{
-                font-size: 6rem;
+                font-size: 6.5rem;
                 line-height: 3.5rem;
             }
+        }
+        .dev-header{
+            font-size: 1.3rem;
         }
     }
 }
@@ -110,15 +115,21 @@ h1{
 /* Landscape phones and down */
 @media (max-width: 480px) {
     nav{
-       .menu{
-         display: none;
-        }
         .menu-button-container{
             margin-left: 0;
         }
     }
     header{
         height: 50vh;
+        .triangle{
+            width: 25%;
+            right: 1%;
+        }
+        .thin-circle{
+            width: 15%;
+            left: 26%;
+            bottom: 5%
+        }
         .wrapper{ 
             display: flex;
             align-items: center;
@@ -129,28 +140,18 @@ h1{
         h1{
             margin-top: 20%;
             margin-left: -5%;
-            text-align: center;
+            font-size: 3rem;
+            line-height: 4.5rem;
+            span{
+                font-size: 5.5rem;
+                
+            }
         }
         .dev-header{
             margin-top: -15%;
             font-size: 1.2rem;
         }
-        .triangle{
-            width: 28%;
-            right: 1%;
-            bottom: 35%;
-    
-        }
-        .circle{
-            width: 20%;
-            left: 10%;
-            top: 5%;
-        }
-        .thin-circle{
-            width: 15%;
-            left: 20%;
-            bottom: 15%
-        }
+        
     }
     
 }
