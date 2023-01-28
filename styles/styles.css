@@ -801,8 +801,42 @@ h1 span {
 }
 
 /* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .skills {
+    height: 15vh;
+  }
+}
 /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .skills {
+    height: 13vh;
+  }
+  .skills .skill-icon {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .skills i {
+    font-size: 2.5rem;
+  }
+}
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  .skills {
+    height: auto;
+  }
+  .skills .skill-icon {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skills i {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    text-align: center;
+  }
+}
 .my-work {
   padding-top: 5%;
   padding-bottom: 5%;

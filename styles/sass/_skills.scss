@@ -20,12 +20,36 @@
 }
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+    .skills{
+        height: 15vh;
+    }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+    .skills{
+        height: 13vh;
+        .skill-icon{
+            justify-content: space-between;
+        }
+        i{
+            font-size: 2.5rem;
+        }
+    }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    .skills{
+        height: auto;
+        .skill-icon{
+            padding-top: 5%;
+            padding-bottom: 5%;
+            flex-wrap: wrap;
+        }
+        i{
+            flex-basis: 20%;
+            text-align: center;
+        }
+    }
 }
