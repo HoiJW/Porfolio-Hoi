@@ -448,20 +448,17 @@ header {
           justify-content: center;
   position: relative;
 }
-
-.triangle {
+header .triangle {
   width: 12%;
   right: 10%;
   bottom: 35%;
 }
-
-.circle {
+header .circle {
   width: 8%;
   left: 10%;
   top: 1%;
 }
-
-.thin-circle {
+header .thin-circle {
   width: 5%;
   left: 26%;
   bottom: 5%;
@@ -600,20 +597,6 @@ h1 span {
           clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   height: auto;
 }
-.about .triangle {
-  left: 10%;
-  width: 10%;
-}
-.about .circle {
-  left: 10%;
-  width: 6%;
-  top: 25%;
-}
-.about .thin-circle {
-  width: 2%;
-  right: 5%;
-  bottom: 10%;
-}
 .about .text-container {
   text-align: center;
   -ms-flex-preferred-size: 30%;
@@ -664,8 +647,8 @@ h1 span {
   color: #f8ca4d;
 }
 .about .image-container {
-  -ms-flex-preferred-size: 18%;
-      flex-basis: 18%;
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
   background-color: rgb(233, 232, 232);
   margin-left: 5%;
 }
@@ -687,6 +670,20 @@ h1 span {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-bottom: 3%;
+}
+.about-wrapper .triangle {
+  left: 10%;
+  width: 10%;
+}
+.about-wrapper .circle {
+  left: 10%;
+  width: 6%;
+  top: 25%;
+}
+.about-wrapper .thin-circle {
+  width: 2%;
+  right: 5%;
+  bottom: 10%;
 }
 
 .section-header p,
@@ -732,17 +729,56 @@ h1 span {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
   }
+  .about .text-container {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    padding-bottom: 10%;
+  }
+  .about .text-container p {
+    margin: 0;
+  }
 }
 /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .about .image-container {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .about .text-container {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  .about .about-wrapper {
+    padding-top: 0;
+  }
+  .about .image-container {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  .about .text-container {
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
+    margin-left: 2%;
+  }
+  .about .text-container p {
+    line-height: 25px;
+    text-align: end;
+  }
+  .about .text-container article {
+    display: none;
+  }
+}
 .skills {
   background-color: #f8ca4d;
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
           clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
-  height: 15vh;
+  height: 20vh;
 }
 .skills .skill-icon {
-  margin-top: 10%;
+  padding-top: 1.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -764,6 +800,9 @@ h1 span {
   scale: 1.1;
 }
 
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
 .my-work {
   padding-top: 5%;
   padding-bottom: 5%;

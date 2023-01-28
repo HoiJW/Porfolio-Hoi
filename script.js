@@ -43,11 +43,11 @@ const observerAShapes = new IntersectionObserver(entries =>{
     entries.forEach(entry =>{
         if(entry.isIntersecting){
             document.querySelectorAll(".animatedS")[3].classList.add("fadeInLeft");
-            document.querySelectorAll(".animatedS")[4].classList.add("fadeInRight");
+            document.querySelectorAll(".animatedS")[4].classList.add("fadeInTop");
             document.querySelectorAll(".animatedS")[5].classList.add("fadeInTop");
         }else{
             document.querySelectorAll(".animatedS")[3].classList.remove("fadeInLeft");
-            document.querySelectorAll(".animatedS")[4].classList.remove("fadeInRight");
+            document.querySelectorAll(".animatedS")[4].classList.remove("fadeInTop");
             document.querySelectorAll(".animatedS")[5].classList.remove("fadeInTop");
         }
     })
