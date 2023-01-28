@@ -611,10 +611,8 @@ h1 span {
           flex-direction: column;
 }
 .about .text-container p {
-  color: rgb(158, 158, 158);
+  color: black;
   line-height: 30px;
-  font-weight: 600;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.116);
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
