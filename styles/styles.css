@@ -961,8 +961,21 @@ h1 span {
   }
 }
 /* Landscape phone to portrait tablet */
-/* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .my-work .triangle {
+    width: 25%;
+    left: 1%;
+    top: 35%;
+  }
+  .my-work .circle {
+    right: 3%;
+    width: 20%;
+    top: 10%;
+  }
+  .my-work .thin-circle {
+    width: 10%;
+    left: 20%;
+  }
   .my-work .section-header {
     padding-top: 5%;
   }
@@ -994,6 +1007,7 @@ h1 span {
     margin-top: 2%;
   }
 }
+/* Landscape phones and down */
 .contact {
   background-color: #f8ca4d;
   -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);

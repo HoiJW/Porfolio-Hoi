@@ -105,11 +105,21 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-}
-
-/* Landscape phones and down */
-@media (max-width: 480px) {
     .my-work{
+        .triangle{
+            width: 25%;
+            left: 1%;
+            top: 35%;
+        }
+        .circle{
+            right: 3%;
+            width: 20%;
+            top: 10%;
+        }
+        .thin-circle{
+            width: 10%;
+            left: 20%;
+        }
         .section-header{
             padding-top: 5%;
         }
@@ -137,4 +147,9 @@
             }
         }
     }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    
 }
