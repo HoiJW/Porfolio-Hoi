@@ -896,6 +896,8 @@ h1 span {
 .my-work a {
   text-decoration: none;
   color: #fe6192;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .my-work a:focus, .my-work a:hover {
   text-decoration: underline;
