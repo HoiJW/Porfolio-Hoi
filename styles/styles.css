@@ -596,8 +596,6 @@ h1 span {
 }
 .about {
   background-color: #f7f7f7;
-  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-          clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   height: auto;
 }
 .about .text-container {
@@ -844,8 +842,8 @@ h1 span {
   padding-top: 5%;
   padding-bottom: 5%;
   height: auto;
-  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-          clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 98%, 0 100%);
+          clip-path: polygon(0 5%, 100% 0, 100% 98%, 0 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1034,6 +1032,9 @@ h1 span {
   color: white;
   position: relative;
 }
+.contact a {
+  color: white;
+}
 .contact .triangle {
   width: 10%;
   left: 5%;
@@ -1072,7 +1073,7 @@ h1 span {
   width: 100%;
   background: none;
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
   padding: 2%;
   margin: 0% 10% 5% 0%;
   outline: none;
@@ -1105,8 +1106,9 @@ h1 span {
 .contact form textarea {
   width: 100%;
   background: none;
-  border: 1px solid white;
+  border: 2px solid white;
   resize: none;
+  border-radius: 10px;
 }
 .contact button {
   margin-top: 10%;
@@ -1131,6 +1133,7 @@ h1 span {
 }
 .contact .my-info {
   text-align: center;
+  width: 200px;
 }
 .contact .my-info .email {
   color: #fe6192;
