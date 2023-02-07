@@ -947,6 +947,7 @@ h1 span {
 .project-wrapper .gif-container:focus, .project-wrapper .gif-container:hover {
   opacity: 1;
   display: block;
+  scale: 1.05;
 }
 .project-wrapper .text-container {
   -ms-flex-preferred-size: 40%;
@@ -1002,7 +1003,7 @@ h1 span {
             order: 1;
   }
   .project-wrapper .thumnail,
-.project-wrapper .text-container {
+  .project-wrapper .text-container {
     margin-left: 12%;
   }
   .project-wrapper .thumnail {
