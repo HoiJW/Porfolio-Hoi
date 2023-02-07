@@ -55,6 +55,9 @@
     margin: 0 auto;
     width: 62%;
     height: auto;
+    img{
+        border-radius: 25px;
+    }
     .project{
         margin-top: 10%;
         display: flex;
@@ -68,6 +71,8 @@
         box-shadow: 10px 10px 7px -8px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 7px -8px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 7px -8px rgba(0,0,0,0.75);
+border-radius: 25px;
+
     }
     .gif-container{
         position: absolute;

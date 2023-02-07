@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
 .top-nav {
+  border-radius: 10px;
   z-index: 10;
     position: fixed;
     display: flex;
@@ -16,6 +17,13 @@
     div{
       margin-right: 8px;
     }
+    li{
+    &:hover,
+    &:focus{
+      background: $firstColor;
+      transition: 0.5s;
+    }
+  }
 }
 
 .menu {
