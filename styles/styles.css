@@ -1066,6 +1066,7 @@ h1 span {
 }
 .contact a {
   color: white;
+  text-decoration: none;
 }
 .contact .triangle {
   width: 10%;
