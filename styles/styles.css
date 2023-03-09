@@ -637,6 +637,16 @@ h1 span {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.about .text-container a {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.about .text-container a:focus, .about .text-container a:hover {
+  scale: 105%;
+  color: #f8ca4d;
+}
 .about .text-container p {
   color: black;
   line-height: 30px;
